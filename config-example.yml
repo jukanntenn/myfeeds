@@ -1,0 +1,12 @@
+debug: false
+verbose: false
+log_level: "info"
+send_key: "your server chan send key"
+sentry_dsn: "your sentry dsn"
+sources:
+  weibo:
+    - "1826792401" # 王思聪
+  bilibili:
+    - "1935882" # 指法芬芳张大仙
+  youku:
+    - "UMTE3Njc4ODM2" # 张坤解说三国杀
