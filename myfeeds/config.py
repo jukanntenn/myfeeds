@@ -100,6 +100,9 @@ class UpperDict:
         except KeyError:
             return default
 
+    def keys(self):
+        return self.__dict.keys()
+
 
 def _import_environ() -> typing.Dict:
     result: typing.Dict[str, typing.Any] = {}

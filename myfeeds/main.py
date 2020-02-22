@@ -248,5 +248,5 @@ class Feeder:
 
 
 if __name__ == "__main__":
-    feeder = Feeder(sources=config.sources.keys())
+    feeder = Feeder(sources=[k.lower() for k in config.sources.keys()])
     feeder.run()
