@@ -169,7 +169,8 @@ class Feeder:
                 if v["title"] == marker:
                     break
                 videos.append(v)
-        youku_marker.set(videos[0]["title"])
+        if videos:
+            youku_marker.set(videos[0]["title"])
         return env.get_template("youku_videos.md").render(videos=videos)
 
     async def youku_task(self, uid):
